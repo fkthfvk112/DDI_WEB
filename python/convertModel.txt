@@ -1,0 +1,4 @@
+convert keras model to tensorflow.js model :
+
+pip install tensorflow.js
+tensorflowjs_converter --input_format keras model.h5 jsModel
