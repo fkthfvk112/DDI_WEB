@@ -1,0 +1,19 @@
+
+.loading-spinner {
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    display: none;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 0.7rem solid rgba(0, 0, 0, 0.3);
+    border-top-color: #3498db;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }

@@ -3,8 +3,11 @@ const bodyParser = require('body-parser');
 const path = require('path');
 //const tf = require('@tensorflow/tfjs-node')
 const cors = require('cors');
+const drugList = require('./drugList');
+const getEvent = require('./interactionEvents');
 
 const app = express();
+var methodOverride = require('method-override')
 
 const { spawn, spawnSync } = require('child_process');
 // const python = spawn('python', ['./python/helloWorld.py', 'I am arguement!!']);
@@ -12,25 +15,43 @@ const { spawn, spawnSync } = require('child_process');
 //템플릿 엔진 설정
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
+app.use(methodOverride('_method'));
 
+app.use((req, res, next)=>{
+  res.locals.drugList = drugList;
+  next();
+})
 app.get('/', async(req, res)=>{
-  /* tensorflow.js 모델을 사용하는 경우 */
-  //const modelPath = `file://${path.join(__dirname, 'python', 'jsModel', 'model.json')}`; //have to change url
-  //const model = await tf.loadLayersModel(modelPath);
-  let eventIndex_buffer;
-  
-  const python = spawnSync('python', ['./python/predictDDI.py', 'Abemaciclib', 'Carbamazepine']);
-  eventIndex_buffer = python.stdout;
+  res.render('home', {drugList});
+})
 
-  let result = -1
-  result = eventIndex_buffer.toString()
+app.post('/executeInteration', (req, res)=>{
+  console.log(req.body);
+  const drugA = req.body.drug.drugA;
+  const drugB = req.body.drug.drugB;
 
-  console.log('result : ', result);
-  res.send(result);
+  const python = spawnSync('python', ['./python/predictDDI.py', drugA, drugB]);
+  const eventIndex_buffer = python.stdout;
+  resultIndex = eventIndex_buffer.toString();
+
+  let resultString = getEvent(Number(resultIndex));
+  resultString = resultString.replace('name', `"${drugA}"`);
+  resultString = resultString.replace('name', `"${drugB}"`);
+
+  const result = {
+    drugA,
+    drugB,
+    interaction:resultString,
+    drugList
+  };
+
+  console.log(result);
+  res.render('result', result);
 })
 
 // 서버 실행

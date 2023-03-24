@@ -10,25 +10,14 @@
 
 </head>
 <body>
+
     <div class="title">
         <h1 style="margin-left: 20px; font-size:2vw;">Drug-drug interaction checker</h1>
     </div>
     <div class="whole_container">
-        <%- include('./partials/form')%>
         <div class="loading-spinner"></div>
-
-        <div class="desctiption_container">
-            <h1>Overview</h1>
-            <p>This web site can show you the interaction between two drugs.
-                <br>
-                <br>
-                If you insert two drugs names and click “Check Interaction” button, cnn model will calculate the similarity between each drug based on their features. And will show the result of interaction.
-                <br>
-                <br>
-                Available drug list is below. You can only use available drug name. If not it doesn't work.
-               </p>
-            <%- include('./partials/possibleDrugs')%>
-        </div>
+        <%- include('./partials/form')%>
+        <%- include('./partials/result')%>
     </div>
 </body>
 <script>
@@ -148,6 +137,5 @@
             alert('Invalid drug name(s)')
         }
     }
-
 </script>
 </html>

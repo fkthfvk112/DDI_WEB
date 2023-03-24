@@ -1,0 +1,11 @@
+<h1>Possible drug list</h1>
+    <details style="margin-bottom: 5rem;">
+        <summary>Click me</summary>
+        <% if(drugList) { %>
+            <ul>
+            <% for(drug of drugList) { %>
+                <li><%= drug %></li>
+            <% } %>
+            </ul>
+        <% } %>
+    </details>

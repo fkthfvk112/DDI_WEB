@@ -1,0 +1,18 @@
+<div class="form_container">
+    <form class="interaction_from" action="/executeInteration" method="POST">
+        <div class="inputSection">
+            <p>Add drug name to check for interaction</p>
+            <div>
+                <input class="drugInput first_input" name="drug[drugA]"type="text">
+                <div class="recommand_section recommand_section1" style="text-align: start; margin-left:10px; max-width: 100%;"></div>
+            </div>
+            <div>
+                <input class="drugInput second_input" name="drug[drugB]" type="text">
+                <div class="recommand_section recommand_section2" style="text-align: start; margin-left:10px; max-width: 100%;"></div>
+            </div>
+            <button type="button" class="checkBtn" onclick="handleSubmit()">Check Interaction</button>
+            <button type="button" class="btnMini clearBtn">clear</button>
+            <button type="button" class="btnMini loadSampleBtn">load sample</button>
+        </div>
+    </form>
+</div>

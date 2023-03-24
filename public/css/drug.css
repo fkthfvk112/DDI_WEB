@@ -1,0 +1,127 @@
+
+.title{
+    background-color: #14213d;
+    width: 100%;
+    color:white;
+    padding:1px;
+}
+
+.whole_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    flex-direction: column;
+}
+
+.form_container{
+    margin-top: 20px;
+    display:flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    flex-direction: column;
+}
+
+.inputSection{
+    max-width: 25rem;
+    width:25rem;
+    display:inline-block;
+    border-radius: 30px;
+    color:white;
+    background-color: #14213d;
+    padding:20px;
+    text-align: center;
+    
+}
+
+.checkBtn{
+    display:block;
+    border:0px;
+    border-radius: 30px;
+    font-size:20px;
+    font-weight: bold;
+    background-color: #fca311;
+    color:white;
+    width:100%;
+    margin-top:10px;
+    padding: 5px 0px 5px 0px;
+    transition: background-color 0.3s ease;
+}
+
+.btnMini{
+    display: inline-block;
+    border:0px;
+    border-radius: 10px;
+    font-size:15px;
+    font-weight: bold;
+    background-color: white;
+    color:#00b4d8;
+    margin-top:10px;
+    padding: 3px 10px 3px 10px;
+    transition: 0.2s ease;
+}
+
+.btnMini:hover{
+    cursor: pointer;
+    background-color: #90e0ef;
+    color:white;
+}
+
+.drugInput{
+    font-size:18px;
+    width:80%;
+    border:1.8px solid #fca311;
+    margin-top:8px;
+    margin-bottom:8px;
+    border-radius: 10px;
+    transition: border 0.2s ease;
+}
+
+.drugInput:focus{
+    box-sizing: border-box;
+    border:3.5px solid #fb5607;
+}
+
+.checkBtn:hover{
+    cursor: pointer;
+    color:black;
+    background-color: #fb5607;
+}
+
+.desctiption_container{
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.recommand_section{
+    color:#e0e1dd;
+    font-size: 0.8em;
+}
+
+
+.recommanded_drug{
+    margin-left:5px;
+    margin-right:5px;
+
+}
+.recommanded_drug:hover{
+    cursor: pointer;
+    color:#fb5607;
+}
+
+.result_container{
+    width: 80%;
+    margin: 30px;
+    border:1px solid #cecece;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+.result_container > span{
+    font-size: 3.6rem;
+    margin-left:30px;
+    margin-right: 30px;
+}
