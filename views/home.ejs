@@ -10,12 +10,10 @@
 
 </head>
 <body>
-    <div class="title">
-        <h1 style="margin-left: 20px; font-size:2vw;">Drug-drug interaction checker</h1>
-    </div>
+    <%- include('./partials/navBar')%>
     <div class="whole_container">
         <%- include('./partials/form')%>
-        <div class="loading-spinner"></div>
+        <%- include('./partials/spinner')%>
 
         <div class="desctiption_container">
             <h1>Overview</h1>
@@ -54,6 +52,7 @@
     });
     function getDrugNameList(inputString){
         let result = [];
+        console.log('내부', drugArr);
         for(drug of drugArr){
             if(drug.includes(inputString)){
                 result.push(drug);
@@ -87,8 +86,15 @@
                 recommand_section1.appendChild(newSpan);
             }
             else{
+                let drugCnt = 1;
                 for(drug of drugsNames){
                     setRecommandDrug(drug, recommand_section1, first_input);
+                    if(drugCnt > 3){
+                        const newDiv = document.createElement('div');
+                        recommand_section1.appendChild(newDiv);
+                        drugCnt = drugCnt%4;
+                    }
+                    drugCnt++;
                 }
             }
         }
@@ -109,8 +115,15 @@
                 recommand_section2.appendChild(newSpan);
             }
             else{
+                let drugCnt = 1;
                 for(drug of drugsNames){
                     setRecommandDrug(drug, recommand_section2, second_input);
+                    if(drugCnt > 3){
+                        const newDiv = document.createElement('div');
+                        recommand_section2.appendChild(newDiv);
+                        drugCnt = drugCnt%4;
+                    }
+                    drugCnt++;
                 }
             }
         }

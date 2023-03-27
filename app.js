@@ -10,7 +10,6 @@ const app = express();
 var methodOverride = require('method-override')
 
 const { spawn, spawnSync } = require('child_process');
-// const python = spawn('python', ['./python/helloWorld.py', 'I am arguement!!']);
 
 //템플릿 엔진 설정
 app.set('view engine', 'ejs');
@@ -40,8 +39,12 @@ app.post('/executeInteration', (req, res)=>{
   resultIndex = eventIndex_buffer.toString();
 
   let resultString = getEvent(Number(resultIndex));
-  resultString = resultString.replace('name', `"${drugA}"`);
-  resultString = resultString.replace('name', `"${drugB}"`);
+  if(resultString.includes('name')){
+    resultString = resultString.replace('name', `"${drugA}"`);
+  }
+  if(resultString.includes('name')){
+    resultString = resultString.replace('name', `"${drugB}"`);
+  }
 
   const result = {
     drugA,
@@ -49,8 +52,6 @@ app.post('/executeInteration', (req, res)=>{
     interaction:resultString,
     drugList
   };
-
-  console.log(result);
   res.render('result', result);
 })
 
