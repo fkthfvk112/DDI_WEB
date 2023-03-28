@@ -7,7 +7,7 @@
 </ul>
 </br>
 <h2>기술 스택</h2>
-      <img src="https://img.shields.io/badge/HTML5-#339933?style=flat&logo=Node.js&logoColor=#339933"/></a>&nbsp
+      <img src="https://img.shields.io/badge/Node.js-#339933?style=flat&logo=Node.js&logoColor=white"/></a>&nbsp
       <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"/></a>&nbsp
       <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"/></a>&nbsp
 
