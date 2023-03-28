@@ -7,9 +7,12 @@
 </ul>
 </br>
 <h2>기술 스택</h2>
+<div>
       <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=Node.js&logoColor=white"/></a>&nbsp
       <img src="https://img.shields.io/badge/Keras-D00000?style=flat&logo=Keras&logoColor=white"/></a>&nbsp
-
+</div>
+</br>
+<h2> python module version </h2>
 Version
   + python (== 3.6.13)
   + numpy (==1.18.1)
