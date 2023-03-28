@@ -2,9 +2,10 @@
 
 <h1>ddi checker</h1>
 <ul>
-  <li>cnn기반 drug drug interaction 결과를 출력해주는 사이트
-  <li>리스트에 기술된 약 이름 두 개를 인풋에 입력 후 버튼을 누르면 두 약물 사이의 인터렉션 결과를 보여준다.
-  <li>23년 부산대학교 졸업과제 프로젝트
+  <li>cnn기반 drug drug interaction 결과를 출력해주는 사이트</li>
+  <li>리스트에 기술된 약 이름 두 개를 인풋에 입력 후 버튼을 누르면 두 약물 사이의 인터렉션 결과를 보여준다.</li>
+  <li>23년 부산대학교 졸업과제 프로젝트</li>
+  <li><a href="https://ddicheker.fly.dev/">ddi checker</a></li>
 </ul>
 </br>
 <h2>기술 스택</h2>
