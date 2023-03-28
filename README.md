@@ -13,10 +13,11 @@
 </div>
 </br>
 <h2> python module version </h2>
-Version
-  + python (== 3.6.13)
-  + numpy (==1.18.1)
-  + Keras (==2.2.4)
-  + pandas (==1.0.1)
-  + scikit-learn (==0.21.2)
-  + stanfordnlp (==0.2.0)
+<ul>
+  <li>python (== 3.6.13)
+  <li>numpy (==1.18.1)
+  <li>Keras (==2.2.4)
+  <li>pandas (==1.0.1)
+  <li>scikit-learn (==0.21.2)
+  <li>stanfordnlp (==0.2.0)
+</ul>
