@@ -1,3 +1,5 @@
+const port = process.env.PORT || 8080;
+const host = "0.0.0.0"
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -56,6 +58,8 @@ app.post('/executeInteration', (req, res)=>{
 })
 
 // 서버 실행
-app.listen(8080, () => {
-  console.log('Server is running on port 8080');
+
+
+app.listen(port, host, () => {
+  console.log(`Server is running on port ${port} host: ${host}`);
 });
