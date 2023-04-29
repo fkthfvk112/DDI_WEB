@@ -1,5 +1,3 @@
-[child_process]('https://nodejs.org/api/child_process.html)
-
 <h1>ddi checker</h1>
 <ul>
   <li>cnn기반 drug drug interaction 결과를 출력해주는 사이트</li>
