@@ -1,6 +1,5 @@
 <h1>ddi checker</h1>
-<img src="https://github.com/fkthfvk112/DDI_WEB/assets/76651990/f8e34c8b-820e-4385-ae8d-9680799c82d4">
-![image](https://github.com/fkthfvk112/DDI_WEB/assets/76651990/f8e34c8b-820e-4385-ae8d-9680799c82d4)
+
 <ul>
   <li>cnn기반 drug drug interaction 결과를 출력해주는 사이트</li>
   <li>리스트에 기술된 약 이름 두 개를 인풋에 입력 후 버튼을 누르면 두 약물 사이의 인터렉션 결과를 보여준다.</li>
@@ -15,6 +14,9 @@
 </div>
 <p>텐서플로우 케라스 모델의 결과값을 받아오기 위한 방법으로 Node.js의 서브프로세스로 파이썬 파일을 실행해 결과값을 받아왔음.
 
+  <div style="text-align:center;">
+<img src="https://github.com/fkthfvk112/DDI_WEB/assets/76651990/f8e34c8b-820e-4385-ae8d-9680799c82d4">
+ </div>
  케라스 모델에 넣을 값 역시 파이썬 함수를 통해 전처리하였음. 따라서 아래와 파이썬 모듈의 버전이 다를 시 코드가 작동되지 않을 가능성 존재.</p>
 </br>
 <h2> python module version </h2>
