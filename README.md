@@ -12,7 +12,7 @@
       <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=Node.js&logoColor=white"/></a>&nbsp
       <img src="https://img.shields.io/badge/Keras-D00000?style=flat&logo=Keras&logoColor=white"/></a>&nbsp
 </div>
-<
+</hr>
 <p>텐서플로우 케라스 모델의 결과값을 받아오기 위한 방법으로 Node.js의 서브프로세스로 파이썬 파일을 실행해 결과값을 받아왔음.
 <h2>워크 플로우</h2>
 <img src="https://github.com/fkthfvk112/DDI_WEB/assets/76651990/f8e34c8b-820e-4385-ae8d-9680799c82d4">
