@@ -13,10 +13,12 @@
       <img src="https://img.shields.io/badge/Keras-D00000?style=flat&logo=Keras&logoColor=white"/></a>&nbsp
 </div>
 </hr>
-<p>텐서플로우 케라스 모델의 결과값을 받아오기 위한 방법으로 Node.js의 서브프로세스로 파이썬 파일을 실행해 결과값을 받아왔음.
+
 <h2>워크 플로우</h2>
 <img src="https://github.com/fkthfvk112/DDI_WEB/assets/76651990/f8e34c8b-820e-4385-ae8d-9680799c82d4">
- 케라스 모델에 넣을 값 역시 파이썬 함수를 통해 전처리하였음. 따라서 아래와 파이썬 모듈의 버전이 다를 시 코드가 작동되지 않을 가능성 존재.</p>
+</hr>
+<p>텐서플로우 케라스 모델의 결과값을 받아오기 위한 방법으로 Node.js의 서브프로세스로 파이썬 파일을 실행해 결과값을 받아왔음.
+케라스 모델에 넣을 값 역시 파이썬 함수를 통해 전처리하였음. 따라서 아래와 파이썬 모듈의 버전이 다를 시 코드가 작동되지 않을 가능성 존재.</p>
 </br>
 <h2> python module version </h2>
 <ul>
