@@ -1,4 +1,6 @@
 <h1>ddi checker</h1>
+![image](https://github.com/fkthfvk112/DDI_WEB/assets/76651990/f8e34c8b-820e-4385-ae8d-9680799c82d4)
+
 <ul>
   <li>cnn기반 drug drug interaction 결과를 출력해주는 사이트</li>
   <li>리스트에 기술된 약 이름 두 개를 인풋에 입력 후 버튼을 누르면 두 약물 사이의 인터렉션 결과를 보여준다.</li>
